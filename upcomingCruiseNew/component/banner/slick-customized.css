@@ -1,0 +1,45 @@
+.primaryCardSlider {
+  margin: 0 1rem;
+}
+.homepage-banner .bannerCarouselSlider .slick-arrow.slick-next {
+  left: calc(100% - 50px) !important;
+  /* right: 80px !important; */
+  top: 50% !important;
+  transform: translateY(-100%);
+  display: block !important;
+}
+
+.homepage-banner .slick-prev {
+  left: 30px !important;
+  z-index: 999;
+  transform: translateY(-100%);
+}
+
+@media (max-width: 640px) {
+  .homepage-banner .bannerCarouselSlider .slick-arrow.slick-next {
+    left: calc(100% - 30px) !important;
+  }
+  
+  .homepage-banner .slick-prev {
+    left: 15px !important;
+  }
+
+  .slick-dots li{
+    width: 15px;
+  }
+}
+
+.homepage-banner .slick-prev:before, .homepage-banner .slick-next:before {
+  color: #fff !important;
+  display: none;
+}
+
+.slick-dots li{
+  text-align: center;
+  text-align: -webkit-center;
+}
+
+.homepage-banner .slick-dots {
+  display: flex !important;
+  justify-content: center
+}
